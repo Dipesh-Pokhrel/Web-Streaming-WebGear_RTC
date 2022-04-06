@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta Data -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Video-Streaming Test for WebGear API of VidGear Python library.">
+    <meta name="author" content="Dipesh">
+    <title>WebGear_RTC API Bare-minimum Template</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', path='/img/favicon-32x32.png') }}">
+    <!-- Meta Data -->
+    <!-- Custom Theme files -->
+    <link href="{{ url_for('static', path='/css/custom.css') }}" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Rubik:900' rel='stylesheet' type='text/css'>
+    <!--//web font-->
+    <!-- Axios framework for async requests -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body class="bodycontainer">
+    <!-- main -->
+    {% block content %}{% endblock %}
+    <!-- //main -->
+    <!-- copyright -->
+    <p>© 2021 All rights reserved | Webgear_RTC API template for Vidgear | Designed by <a href="https://github.com/abhiTronix">@Dipesh</a>.</p>
+    <!-- //copyright -->
+   
+    <!-- Custom Scripts -->
+    <script src="{{ url_for('static', path='/js/custom.js') }}"></script>
+    <!-- //Custom Scripts -->
+</body>
+
+</html>
